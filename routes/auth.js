@@ -8,6 +8,7 @@ router.get("/login/success", (req, res) => {
 			message: "Successfully Loged In",
 			user: req.user,
 		});
+		console.log("Successfully Loged In")
 	} else {
 		res.status(403).json({ error: true, message: "Not Authorized" });
 	}
